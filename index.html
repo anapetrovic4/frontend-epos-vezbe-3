@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="REFRESH" content ="3; URL=https://www.youtube.com/"/> -->
+    <meta name="description" content = "Kratak opis sajta" />
+    <meta name="keywords" content = "pasta spaghetti" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Foodomania</h1> <!-- Block element-->
+    <h3>Order</h3> <!-- Block element-->
+    <form action="">
+        <label for="customer">Customer <span>name and surname</span></label> <!-- Label - Inline element-->
+        <input 
+            type="text"
+            id="customer"
+            name="customer"
+            size = "35"
+            maxlength="15"
+        > 
+        <!-- Tip inputa, inicijalna duzina 20 karaktera, name svako polje mora imati da bi moglo da se koristi-->
+        <!-- Id je jedinstveno polje za label, id se vezuje za label. Label se vezuje za input polje-->
+        <div> <!--Div je block element koji zauzima celu sirinu ekrana-->
+            <label for="password">Password:</label>
+            <input 
+                type="password"
+                name="password"
+                id="password"
+                size = "35"
+                maxlength="15"
+            >
+        </div>
+        <!-- Radio button. Na osnovu name-a posmatra elemente kao jednu grupu-->
+        Choose sandwich type:
+        <br>
+        <input type="radio" name="sandwich" value="hamcheese" checked>
+        Ham and cheese
+        <br>
+        <input type="radio" name="sandwich" value="baconcheese">
+        Bacon and cheese
+        <br>
+        <input type="radio" name="sandwich" value="tuna">
+        Tuna
+        <br>
+        <input type="radio" name="sandwich" value="vegan">
+        Vegetable
+        <br>
+
+        <br>
+        Choose filling:
+        <br>
+
+        <input type="checkbox" name="fillings" value = "creamcheese">
+        Cream cheese <br>
+        <input type="checkbox" name="fillings" value = "mayo">
+        Mayo <br>
+        <input type="checkbox" name="fillings" value = "ketchup">
+        Ketchup <br>
+        <input type="checkbox" name="fillings" value = "mustard">
+        Mustard <br>
+
+        <!-- Textarea: comments-->
+        <br>
+        Add a comment:
+        <br/>
+        <textarea name="comment" id="comment" cols="30" rows="5">Enter comment...</textarea>
+
+        <!-- Select: padajuce lista-->
+        <br>
+        Choose payment type:
+        <br>
+        <select name="payment" id="payment">
+            <option value="cash">Pay with cash</option>
+            <option value="tokens" selected>Pay with tokens</option>
+            <option value="card">Pay with card</option> 
+            <optgroup label="Card" disabled="disabled">
+                <option value="visa">Visa card</option>
+                <option value="mastercard">Matercard</option>
+            </optgroup>         
+        </select>
+        <button type="submit">Order</button>
+        <button type="submit">Refresh</button>
+    </form>
+</body>
+</html>

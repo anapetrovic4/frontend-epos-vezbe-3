@@ -6,12 +6,26 @@
     <!-- <meta http-equiv="REFRESH" content ="3; URL=https://www.youtube.com/"/> -->
     <meta name="description" content = "Kratak opis sajta" />
     <meta name="keywords" content = "pasta spaghetti" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style01.css">
+    <title>Cascading Style Sheet</title>
+    <!--- 1) Inline CSS-->
+    <!--- 2) Internal CSS-->
+    <!--- 3) External CSS - Most practical-->
+
+    <!--- 2) Internal CSS-->
+    <style>
+        form {
+            border-style: dashed;
+            border-width: 3px;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Foodomania</h1> <!-- Block element-->
     <h3>Order</h3> <!-- Block element-->
-    <form action="">
+    <!--- 1) Inline CSS-->
+    <form id="forma01" action="" style = "background-color: linen; text-align: center;">
         <label for="customer">Customer <span>name and surname</span></label> <!-- Label - Inline element-->
         <input 
             type="text"
@@ -83,5 +97,7 @@
         <button type="submit">Order</button>
         <button type="submit">Refresh</button>
     </form>
+    <div class="prvi velikaslova"> Prvi div </div> <!--Vise elemenata mogu pripadati istoj klasi. Jedan element moze imati vise klasa-->
+    <div class="drugi"> Drugi div</div>
 </body>
 </html>

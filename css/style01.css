@@ -1,0 +1,50 @@
+form {
+    color: maroon;
+}
+
+/*Preko # pristupamo indeksu forme */
+#forma01 {
+    text-align: center;
+    padding: 50px;
+    margin: 50px
+}
+
+/* CSS units: em, rem, px*/
+
+.prvi {
+    background-color: rgb(95, 2, 31);
+    padding: 5%;
+    margin: 20px;
+    height: 200px;
+    width: 30vh;
+    box-sizing: border-box; /* Racuna i padding i border */
+}
+.drugi {
+    background-color: mediumseagreen;
+    padding: 50px;
+    margin: 20px;
+    height: 200px;
+    width: 200px;    
+}
+
+* { /* Menjanje svih propertija iz dokumenta*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.velikaslova{
+    text-transform: uppercase;
+}
+
+.prvi.velikaslova{
+    color: red;
+}
+
+/*Preko . pristupamo indeksu klase */
+
+/* Padding, border, margin
+Padding - prostor unutar bordera
+Border - granica oko elementa
+Margin - margine se preklapaju i uzimaju najveću vrednost
+*/
+
+/* Selector specificity: A, B, C: id, klasa, tag. sto je veci broj, ima vecu prednost
